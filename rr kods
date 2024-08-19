@@ -1,0 +1,31 @@
+# Ievada skaitļus
+num1 = float(input("Ievadi pirmo skaitli: "))
+num2 = float(input("Ievadi otro skaitli: "))
+
+# Izvēlas operāciju
+print("Izvēlies operāciju:")
+print("1. Saskaitīšana")
+print("2. Atņemšana")
+print("3. Reizināšana")
+print("4. Dalīšana")
+
+operacija = int(input("Ievadi operācijas numuru: "))
+
+# Veic operāciju
+if operacija == 1:
+    rezultats = num1 + num2
+    print(f"{num1} + {num2} = {rezultats}")
+elif operacija == 2:
+    rezultats = num1 - num2
+    print(f"{num1} - {num2} = {rezultats}")
+elif operacija == 3:
+    rezultats = num1 * num2
+    print(f"{num1} * {num2} = {rezultats}")
+elif operacija == 4:
+    if num2 != 0:
+        rezultats = num1 / num2
+        print(f"{num1} / {num2} = {rezultats}")
+    else:
+        print("Nevar dalīt ar 0!")
+else:
+    print("Nepareiza operācija!")
